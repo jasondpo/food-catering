@@ -1,24 +1,170 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿body, html {
+    font-family: "Roboto",sans-serif;
+}
+a, #registerLink{
+    color: #ffffff !important;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.spacer-top {
+    margin-top: 180px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.spacer-bottom {
+    margin-bottom: 60px;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.color-overlay {
+    background-image: -moz-linear-gradient(-180deg, rgba(177, 30, 69, 0.8), rgba(255, 153, 72, 0.8) 100%);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+}
+
+.row-width {
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.colored-bkg-home {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+    background-image: -moz-linear-gradient(-90deg, #b11e45, #ff9948 100%);
+    background: -webkit-gradient(linear, center top, center bottom, from(#b11e45), to(#ff9948));
+    background: -webkit-linear-gradient(#b11e45, #ff9948);
+    background: -moz-linear-gradient(#b11e45, #ff9948);
+    background: -o-linear-gradient(#b11e45, #ff9948);
+    background: -ms-linear-gradient(#b11e45, #ff9948);
+    background: linear-gradient(#b11e45, #ff9948);
+}
+
+.colored-bkg-page {
+    position: fixed;
+    background-color: #EEE;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+}
+
+.v-centered {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+h11 {
+    color: white;
+    cursor: pointer;
+    text-decoration:none;
+}
+h11 a:hover{
+    text-decoration:none;
+}
+
+    h11:after {
+        color: white;
+        content: '';
+        border-bottom: solid 1px #fff;
+        width: 70px;
+        left: 50%;
+        margin-left: -35px;
+        position: absolute;
+        top: 26px;
+    }
+
+h12 {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: .06em;
+    text-align: center;
+    display: block;
+}
+
+.logo {
+    height: 220px;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.registerfield {
+    display: block;
+    margin: 0px auto 20px;
+}
+
+.signup-btn{
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.login-btn {
+    background-color: #730022 !important;
+}
+
+.login-btn a:hover{
+   text-decoration:none;
+}
+
+.registerfield {
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    color: white;
+    letter-spacing: .06em;
+    width: 200px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.catering-section-header {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    background-size: cover;
+    top: 0;
+    z-index: 1;
+}
+
+.myPlan{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    width:300px;
+    height:100px;
+    z-index:5;
+} 
+
+.billing-bkg {
+    background-image: url(../images/dollars.jpg);
+}
+
+@media all and (min-height: 500px) {
+    /* Applies styles AFTER min width */
+    .signup-btn {
+        bottom: auto;
+        top: 500px;
+    }
 }

@@ -2,20 +2,42 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="colored-bkg-home"></div>
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-6 col-sm-offset-3 logo">
+        </div>
+
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-12">
-        <h1>My Food Catering Web App</h1>
-        <ol>
-            <li>Create necessary tables</li>
-            <li>Build the database</li>
-            <li>Design the necessary views</li>
-            <li></li>
-        </ol>
+<div class="container">
+    <div class="row ">
+
+        <div class="col-sm-12">
+
+                <input type="text" id="userName" class="registerfield" name="userName" value="User Name" onblur="if(this.value==''){ this.value='User Name'; }" onfocus="if(this.value=='User Name'){ this.value='';}" />
+
+
+                <input type="text" id="userPassword" class="registerfield" name="userPassword" value="Password" onblur="if(this.value==''){ this.value='Password'; this.type='text'}" onfocus="if(this.value=='Password'){ this.value=''; this.type='password'}" />
+
+                <button class="registerfield login-btn" type="submit">@Html.ActionLink("Log in", "Login", "Account")</button>
+
+
+        </div>
+
     </div>
+</div>
+
+
+<div class="signup-btn"><h11>@Html.ActionLink("Sign up", "Register", "Account")</h11></div>
+
+<div class="myPlan">
+    <ol>
+        <li>Create veiws</li>
+        <li>Create Tables/Database</li>
+        <li>Create Forms</li>
+        <li>Add css/javascript powered animation</li>
+    </ol>
 </div>
